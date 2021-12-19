@@ -1,0 +1,6 @@
+import 'slick-carousel'
+$(function(){
+
+
+  
+});
