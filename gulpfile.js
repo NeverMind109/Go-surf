@@ -35,6 +35,8 @@ function libscss() {
   return src([
     "node_modules/normalize.css/normalize.css",
     "node_modules/slick-carousel/slick/slick.css",
+    "node_modules/slick-carousel/slick/slick-theme.css",
+    "node_modules/animate.css/animate.css",
   ])
     .pipe(concat('_libs.scss'))
     .pipe(

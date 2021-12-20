@@ -9,6 +9,7 @@
   "author": "Vladislav",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
