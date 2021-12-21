@@ -19,8 +19,6 @@
         font-weight: 800;
         font-size: 200px;
         line-height: 156px;
-        text-transform: uppercase;
-        color: #FFFFFF;
         opacity: 0.07;
     }
     &__search {
@@ -45,6 +43,7 @@
     &__location {
         position: relative;
         display: inline-block;
+        text-transform: capitalize;
         font-weight: 300;
         font-size: 12px;
         line-height: 14px;
@@ -68,7 +67,6 @@
         bottom: 115px;
         text-align: right;
         color: #fff;
-        text-transform: uppercase;
         &-subtitle {
             margin-bottom: 5px;
         }
@@ -82,9 +80,6 @@
             margin-bottom: 8px;
         }
         &-text {
-            font-weight: 800;
-            font-size: 40px;
-            line-height: 50px;
             margin-bottom: 20px;
         }
     }
@@ -105,7 +100,6 @@
     position: absolute;
     max-width: 920px;
     width: 100%;
-    color: #fff;
     right: 50px;
     bottom: 31px;
     .slick-current {
@@ -128,6 +122,7 @@
         line-height: 34px;
     }
     &__name {
+        text-transform: capitalize;
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;

@@ -5,10 +5,17 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
+    background-color: #171919;
+    color: #fff;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 a {
     display: inline-block;
-    color: inherit;
+    color: #fff;
     text-decoration: none;
 }
 ul {
@@ -16,13 +23,11 @@ ul {
     margin: 0;
     padding: 0;
 }
-.subtitle-left {
+.heading-left {
     position: relative;
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     opacity: 0.5;
     padding-left: 103px;
     display: inline-block;
@@ -37,6 +42,15 @@ ul {
         height: 1px;
     }
 }
+.heading-main {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    padding-right: 10px;
+    span {
+        font-weight: 100;
+    }
+}
 .menu {
     padding-top: 40px;
     &__list {
@@ -47,6 +61,7 @@ ul {
             color: #fff;
         }
         &-text {
+            text-transform: capitalize;
             display: block;
             font-weight: 500;
             font-size: 12px;
@@ -61,9 +76,70 @@ ul {
     stroke-dasharray: 600;
     animation: animdash 5s infinite 6s;
 }
-
 @keyframes animdash {
     to {
         stroke-dashoffset: 0;
+    }
+}
+.title {
+    span {
+        position: relative;
+        display: inline-block;
+        font-weight: 800;
+        font-size: 200px;
+        color: rgba(#fff, .02);
+        transform: translateX(-50px);
+    }
+    &__text {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
+    }
+}
+.subtitle {
+    display: inline-block;
+    text-align: right;
+}
+.btn {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    span {
+        position: relative;
+        display: inline-block;
+        padding: 17px 57px 15px 17px;
+        background-color: $green;
+        margin-left: 19px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../images/arrow-right.svg');
+            width: 25px;
+            height: 21px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 17px;
+        }
     }
 }
