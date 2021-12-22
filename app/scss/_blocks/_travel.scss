@@ -1,0 +1,78 @@
+.travel {
+    padding: 160px 0 265px;
+    background: url('../images/cocktail.png') no-repeat;
+    background-position: bottom right;
+    .slider-arrows {
+        top: 225px;
+        opacity: 0.25;
+    }
+    &__description {
+        position: relative;
+        padding-right: 78px;
+        &-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &-slider {
+        &__head {
+            background-repeat: no-repeat;
+            background-position: top left;
+            min-height: 780px;
+        }
+        &__subtitle {
+            text-align: right;
+            padding: 132px 80px 0 0;
+        }
+        &__description {
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin-top: -230px;
+            padding: 160px 0 0 150px;
+            min-height: 320px;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-around;
+            &-item {
+                min-height: 200px;
+                margin-bottom: 66px;
+                position: relative;
+            }
+            &-subtitle {
+                position: absolute;
+                top: 97px;
+                left: -97px;
+                width: 200px;
+                height: 0;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                opacity: 0.5;
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                text-align: right;
+            }
+            &-title {
+                padding-left: 40px;
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+                span {
+                    display: block;
+                    text-align: right;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 36px;
+                    letter-spacing: 5.25px;
+                    opacity: 0.75;
+                }
+            }
+        }
+        &__btn {
+            text-align: center;
+        }
+
+    }
+}
