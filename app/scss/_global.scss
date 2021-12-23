@@ -173,6 +173,61 @@ ul {
         }
     }
 }
+.star {
+    display: inline-block;
+    margin-left: -25px;
+}
+.quantity {
+    display: inline-block;
+    input {
+        width: 42px;
+        height: 42px;
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        color: #fff;
+    }
+    input:focus {
+        outline: 0;
+    }
+    &-nav {
+        float: left;
+        position: static;
+        height: 42px;
+    }
+    &-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        top: 45px;
+    }
+    &-up {
+        position: absolute;
+        right: 0;
+    }
+    &-down {
+        position: absolute;
+        right: 25px;
+    }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number" i] {
+    padding: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
 .surf {
     padding: 160px 0 120px;
 }

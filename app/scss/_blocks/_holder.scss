@@ -1,18 +1,36 @@
-.travel {
+.holder {
     padding: 160px 0 265px;
-    background: url('../images/cocktail.png') no-repeat;
+    background-repeat: no-repeat;
     background-position: bottom right;
+    margin-bottom: 30px;
     .slider-arrows {
         top: 225px;
         opacity: 0.25;
     }
     &__description {
         position: relative;
-        padding-right: 78px;
+        padding-right: 215px;
         &-img {
             position: absolute;
             top: 0;
-            right: 0;
+            right: 137px;
+        }
+    }
+    &__rating {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &-pricing {
+        &__span {
+            display: block;
+            text-align: right;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            letter-spacing: 5.25px;
+            opacity: 0.75;
         }
     }
     &-slider {
@@ -28,6 +46,7 @@
         &__description {
             background-repeat: no-repeat;
             background-position: right center;
+            background-size: contain;
             margin-top: -230px;
             padding: 160px 0 0 150px;
             min-height: 320px;
@@ -55,19 +74,11 @@
                 text-align: right;
             }
             &-title {
-                padding-left: 40px;
+                position: relative;
+                padding-left: 50px;
                 font-weight: 800;
                 font-size: 40px;
                 line-height: 36px;
-                span {
-                    display: block;
-                    text-align: right;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 36px;
-                    letter-spacing: 5.25px;
-                    opacity: 0.75;
-                }
             }
         }
         &__btn {
