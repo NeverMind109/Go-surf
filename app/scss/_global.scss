@@ -175,7 +175,9 @@ ul {
 }
 .star {
     display: inline-block;
-    margin-left: -25px;
+    & + li {
+        margin-left: -25px;
+    }
 }
 .quantity {
     display: inline-block;
@@ -230,4 +232,86 @@ input[type=number] {
 }
 .surf {
     padding: 160px 0 120px;
+}
+.surfboard {
+    position: relative;
+    &-box {
+        position: absolute;
+        &--1 {
+            right: 40px;
+            top: 215px;
+        }
+        &--2 {
+            left: 0;
+            top: 287px;
+        }
+        &--3 {
+            bottom: 70px;
+            left: 72px;
+        }
+        &__circle {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        &__content {
+            display: none;
+            &--active {
+                display: block;
+                position: absolute;
+                width: 359px;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 24px;
+                padding-left: 104px;
+                top: -15px;
+                left: 40px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 80px;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+.surfboard-box--3 .surfboard-box__content {
+    &--active {
+        padding-left: 0;
+        padding-right: 104px;
+        left: -379px;
+        &::before {
+            right: 0;
+            left: auto;
+        }
+    }
+}
+.circle__minus {
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $green;
+}
+.circle__plus {
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $green;
+    &--active {
+        display: none;
+    }
 }
