@@ -13,6 +13,12 @@ $(function () {
     slidesToScroll: 4,
     dots: true,
     asNavFor: ".header__slider",
+    responsive: [
+      {
+        breakpoint: 961,
+          settings: "unslick",
+      },
+    ]
   });
   $(".surf-slider").slick({
     slidesToShow: 4,
@@ -23,6 +29,34 @@ $(function () {
     prevArrow:
       '<img class="slider-arrows slider-item__info-prev" src="images/arrow-left.svg" alt="Arrow: Left">',
     asNavFor: ".slider-map",
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 426,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },
+    ]
   });
   $(".slider-map").slick({
     slidesToShow: 8,
@@ -30,6 +64,28 @@ $(function () {
     arrows: false,
     asNavFor: ".surf-slider",
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+        }
+      },
+    ]
   });
   $(".holder__slider").slick({
     infinite: true,
@@ -114,4 +170,9 @@ $(function () {
     $("#third-plus").toggleClass("circle__plus--active");
     $("#third-text").toggleClass("surfboard-box__content--active");
   });
+
+
+  $('.menu-mobile-btn').on('click', function() {
+    $('.menu').toggleClass('menu-active')
+  })
 });
