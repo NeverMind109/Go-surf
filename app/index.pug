@@ -92,9 +92,9 @@ html(lang="en")
             .header__slider-item.slider-item
                 .slider-item__info
                     .slider-item__info-subtitle.heading-left Surf
-                    .slider-item__info-title North Shore
+                    .slider-item__info-title.animate__animated.animate__fadeInRight.animate__delay-1s North Shore
                     .slider-item__info-subtext.heading-left Condition
-                    .slider-item__info-text.heading-main Radical
+                    .slider-item__info-text.heading-main.animate__animated.animate__fadeInRight.animate__delay-1s Radical
                     |
                     |
                     a.slider-item__info-link(href="#")
@@ -137,7 +137,7 @@ html(lang="en")
                         |
                         |
                         img.slider__item__info-next(src="images/arrow-right.svg" alt="Arrow: Right")
-        .slider-dots
+        .slider-dots.animate__animated.animate__fadeInUp.animate__delay-2s
             .slider-dots__item
                 .dots-box
                     .dots-box__number 01
@@ -164,14 +164,15 @@ html(lang="en")
     .container
         section.surf
             .title
-                span surf
+                .title__wrapper
+                    span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft surf
                     h3.title__text surf
             .surf__subtitle
-                .subtitle
+                .subtitle.wow(data-wow-offset="400").animate__animated.animate__fadeInRight
                     .heading-left Current location
                     .heading-main California #[span |] USA
-            .slider-map
-                .slider-points.slider-points--1
+            .slider-map.wow(data-wow-offset="300").animate__animated.animate__zoomInDown.animate__slow
+                .slider-points.slider-points--1.wow(data-wow-delay="1s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -193,7 +194,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--2
+                .slider-points.slider-points--2.wow(data-wow-delay="1.3s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -215,7 +216,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--3
+                .slider-points.slider-points--3.wow(data-wow-delay="1.4s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -237,7 +238,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--4
+                .slider-points.slider-points--4.wow(data-wow-delay="1.5s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -259,7 +260,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--5
+                .slider-points.slider-points--5.wow(data-wow-delay="1.4s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -281,7 +282,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--6
+                .slider-points.slider-points--6.wow(data-wow-delay="1.3s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -303,7 +304,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--7
+                .slider-points.slider-points--7.wow(data-wow-delay="1.2s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -325,7 +326,7 @@ html(lang="en")
                                 img.slider-points__content-img(src="images/wind-icon-svg.svg" alt="Item Icon")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
-                .slider-points.slider-points--8
+                .slider-points.slider-points--8.wow(data-wow-delay="1s").animate__animated.animate__fadeInDownBig
                     .slider-points__circle.point--active
                     .slider-points__content
                         .slider-points__content-row
@@ -348,7 +349,7 @@ html(lang="en")
                                 .slider-points__content-number 4 SE
                                 .slider-points__content-name Wind (KTS)
             .surf-slider
-                .surf-box
+                .surf-box.wow(data-wow-offset="300", data-wow-delay="0.2s").animate__animated.animate__fadeInUp
                     .surf-box__wrapper(style={"background-image": "url('images/slide-1.jpg')"})
                         .surf-box__inner
                             .surf-box__inner-title Malibu Beach
@@ -357,7 +358,7 @@ html(lang="en")
                                 |
                                 |
                                 a.btn(href="#") View #[span Surf]
-                .surf-box
+                .surf-box.wow(data-wow-offset="300", data-wow-delay="0.5s").animate__animated.animate__fadeInUp
                     .surf-box__wrapper(style={"background-image": "url('images/slide-2.jpg')"})
                         .surf-box__inner
                             .surf-box__inner-title Airlie Beach
@@ -366,7 +367,7 @@ html(lang="en")
                                 |
                                 |
                                 a.btn(href="#") View #[span Surf]
-                .surf-box
+                .surf-box.wow(data-wow-offset="300", data-wow-delay="0.8s").animate__animated.animate__fadeInUp
                     .surf-box__wrapper(style={"background-image": "url('images/slide-3.jpg')"})
                         .surf-box__inner
                             .surf-box__inner-title Cloud Nine
@@ -375,7 +376,7 @@ html(lang="en")
                                 |
                                 |
                                 a.btn(href="#") View #[span Surf]
-                .surf-box
+                .surf-box.wow(data-wow-offset="300", data-wow-delay="1.1s").animate__animated.animate__fadeInUp
                     .surf-box__wrapper(style={"background-image": "url('images/slide-4.jpg')"})
                         .surf-box__inner
                             .surf-box__inner-title Vieux Boucau
@@ -422,13 +423,14 @@ html(lang="en")
                                 a.btn(href="#") View #[span Surf]
         section.holder.travel(style={"background-image": "url('images/cocktail.png')"})
             .title
-                span travel
+                .title__wrapper
+                    span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft travel
                     h3.title__text travel
             .holder__slider
                 .holder__slider-item.travel-slider
                     .holder-slider__head(style={"background-image": "url('images/travel-slider.png')"})
                         .holder-slider__subtitle
-                            .subtitle
+                            .subtitle.wow(data-wow-offset="300").animate__animated.animate__fadeInRight
                                 .heading-left Shore
                                 .heading-main Airlie Beach #[span |] Australia
                     .holder-slider__description(style={"background-image": "url('images/airplane.png')"})
@@ -439,27 +441,27 @@ html(lang="en")
                                 |
                                 img.holder__description-img(src="images/avia-logo.svg" alt="Avia Logo")
                     .holder-slider__info
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.2s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Destination
                             .holder-slider__info-title Queensland 
                                 br 
                                 | Australia
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.5s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Distance
                             .holder-slider__info-title 7,065 Miles
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.8s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Travel Time
                             .holder-slider__info-title 23 Hours
                                 br 
                                 |  5 Minutes
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="1.1s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Pricing
                             .holder-slider__info-title $1,976 USD
                                 |
                                 |
                                 span.holder-pricing__span Round Trip
                     .holder-slider__btn
-                        a.btn(href="#") Book #[span Flight]
+                        a.btn(href="#").wow(data-wow-delay="1.5s").animate__animated.animate__fadeInUp.animate__animated.animate__fadeInUp Book #[span Flight]
                 .holder__slider-item.travel-slider
                     .holder-slider__head(style={"background-image": "url('images/travel-slider.png')"})
                         .holder-slider__subtitle
@@ -602,13 +604,14 @@ html(lang="en")
                         a.btn(href="#") Book #[span Flight]             
         section.holder.sleep(style={"background-image": "url('images/flower.png')"})
             .title
-                span Sleep
+                .title__wrapper
+                    span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft Sleep
                     h3.title__text Sleep
             .holder__slider
                 .holder__slider-item.travel-slider
                     .holder-slider__head(style={"background-image": "url('images/sleep-slider.png')"})
                         .holder-slider__subtitle
-                            .subtitle
+                            .subtitle.wow(data-wow-offset="300").animate__animated.animate__fadeInRight
                                 .heading-left Resorts
                                 .heading-main Auberge #[span |] Australia
                     .holder-slider__description(style={"background-image": "url('images/hammock.png')"})
@@ -627,24 +630,24 @@ html(lang="en")
                                     li.holder__star.star
                                         img.holder__star-image(src="images/star.svg" alt="Star")
                     .holder-slider__info
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.2s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Resort
                             .holder-slider__info-title Auberge
                                 br 
                                 | Australia
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.5s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle # of Nights
                             .holder-slider__info-title
                                 .quantity 
                                     input.nights(type="number" min="1" max="9" step="1" value="5", disabled)
                                 | Nights
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="0.8s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle # of Guests
                             .holder-slider__info-title
                                 .quantity 
                                     input.guests(type="number" min="1" max="9" step="1" value="4", disabled)
                                 | Guests
-                        .holder-slider__info-item
+                        .holder-slider__info-item.wow(data-wow-offset="300", data-wow-delay="1.1s").animate__animated.animate__fadeInUp
                             .holder-slider__info-subtitle Pricing
                             .holder-slider__info-title
                                 span.summ(data-nights="55" data-guests="25")  
@@ -653,7 +656,7 @@ html(lang="en")
                                 |
                                 span.holder-pricing__span Per Night
                     .holder-slider__btn
-                        a.btn(href="#") Book #[span Stay]
+                        a.btn(href="#").wow(data-wow-delay="1.5s").animate__animated.animate__fadeInUp.animate__animated.animate__fadeInUp Book #[span Stay]
                 .holder__slider-item.travel-slider
                     .holder-slider__head(style={"background-image": "url('images/sleep-slider.png')"})
                         .holder-slider__subtitle
@@ -901,7 +904,8 @@ html(lang="en")
                         a.btn(href="#") Book #[span Stay]
         section.shop
             .title
-                span shop
+                .title__wrapper
+                    span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft shop
                     h3.title__text shop
             .shop__slider
                 .shop__slider-item(style={"background-image": "url('images/shop-bg.png')"})
@@ -925,9 +929,9 @@ html(lang="en")
                                 span $799
                                     sup 99
                             .shop__slider__btn
-                                a.btn(href="#") Drop #[span in]
+                                a.btn(href="#").wow(data-wow-delay="1.5s").animate__animated.animate__fadeInUp.animate__animated.animate__fadeInUp Drop #[span in]
                         .shop__slider-content
-                            .surfboard
+                            .surfboard.wow(data-wow-offset="400").animate__animated.animate__fadeInUp
                                 img.surfboard-img(src="images/surfboard.png" alt="Surfboard")
                                 .surfboard-box.surfboard-box--1
                                     .surfboard-box__circle#first-circle
@@ -944,7 +948,7 @@ html(lang="en")
                                         .circle__minus
                                         .circle__plus#third-plus
                                     .surfboard-box__content#third-text Double Concave with Vee Shape low point
-                            .shop__extras
+                            .shop__extras.wow(data-wow-offset="400").animate__animated.animate__fadeInUp
                                 .shop__extras-title Extras
                                 .shop__extras-inner
                                     .shop__extras-box
@@ -1117,6 +1121,6 @@ html(lang="en")
                                         .shop__extras-name Pura Vida
                                         .shop__extras-price $27.99
         footer.footer
-            a.footer__btn.btn(href="#") Go #[span Surf]
+            a.footer__btn.btn(href="#").wow.animate__animated.animate__fadeInUp Go #[span Surf]
             .footer__copy © Go-Surf 2018. All Rights Reserved.
     script(src="js/main.min.js")

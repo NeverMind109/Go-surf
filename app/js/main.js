@@ -175,4 +175,6 @@ $(function () {
   $('.menu-mobile-btn').on('click', function() {
     $('.menu').toggleClass('menu-active')
   })
+
+  new WOW().init();
 });

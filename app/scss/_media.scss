@@ -393,7 +393,7 @@
     }
     .holder {
         .title {
-            span {
+            &__wrapper {
                 padding-bottom: 0;
             }
         }
@@ -488,7 +488,7 @@
 }
 @media(max-width: 720px) {
     .title {
-        span {
+        &__wrapper {
             font-size: 87px;
             padding: 0 0 80px 10px;
         }
