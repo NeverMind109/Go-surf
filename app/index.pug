@@ -42,7 +42,7 @@ html(lang="en")
                     li.menu__list-item
                         |
                         |
-                        a.menu__list-link(href="#")
+                        a.menu__list-link(href="#surf")
                             |
                             |
                             img.menu__list-icon(src="images/nav-icon-1.svg" alt="Navigation: Surf")
@@ -52,7 +52,7 @@ html(lang="en")
                     li.menu__list-item
                         |
                         |
-                        a.menu__list-link(href="#")
+                        a.menu__list-link(href="#travel")
                             |
                             |
                             img.menu__list-icon(src="images/nav-icon-2.svg" alt="Navigation: Travel")
@@ -62,7 +62,7 @@ html(lang="en")
                     li.menu__list-item
                         |
                         |
-                        a.menu__list-link(href="#")
+                        a.menu__list-link(href="#sleep")
                             |
                             |
                             img.menu__list-icon(src="images/nav-icon-3.svg" alt="Navigation: Sleep")
@@ -72,7 +72,7 @@ html(lang="en")
                     li.menu__list-item
                         |
                         |
-                        a.menu__list-link(href="#")
+                        a.menu__list-link(href="#shop")
                             |
                             |
                             img.menu__list-icon(src="images/nav-icon-4.svg" alt="Navigation: Shop")
@@ -157,12 +157,12 @@ html(lang="en")
         .header__arrows
             |
             |
-            a.header__arrows-link.animate__animated.animate__fadeInDown.animate__infinite.animate__slow(href="#")
+            a.header__arrows-link.animate__animated.animate__fadeInDown.animate__infinite.animate__slow(href="#shop")
                 |
                 |
                 img.header__arrows-img(src="images/arrows-down.svg" alt="Scroll Down")
     .container
-        section.surf
+        section.surf#surf
             .title
                 .title__wrapper
                     span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft surf
@@ -421,7 +421,7 @@ html(lang="en")
                                 |
                                 |
                                 a.btn(href="#") View #[span Surf]
-        section.holder.travel(style={"background-image": "url('images/cocktail.png')"})
+        section.holder.travel(style={"background-image": "url('images/cocktail.png')"})#travel
             .title
                 .title__wrapper
                     span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft travel
@@ -602,7 +602,7 @@ html(lang="en")
                                 span.holder-pricing__span Round Trip
                     .holder-slider__btn
                         a.btn(href="#") Book #[span Flight]             
-        section.holder.sleep(style={"background-image": "url('images/flower.png')"})
+        section.holder.sleep(style={"background-image": "url('images/flower.png')"})#sleep
             .title
                 .title__wrapper
                     span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft Sleep
@@ -902,7 +902,7 @@ html(lang="en")
                                 span.holder-pricing__span Per Night
                     .holder-slider__btn
                         a.btn(href="#") Book #[span Stay]
-        section.shop
+        section.shop#shop
             .title
                 .title__wrapper
                     span.wow(data-wow-offset="400").animate__animated.animate__fadeInLeft shop

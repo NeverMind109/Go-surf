@@ -177,4 +177,29 @@ $(function () {
   })
 
   new WOW().init();
+
+  $('a[href="#surf"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+  });
+  $('a[href="#travel"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+  });
+  $('a[href="#sleep"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+  });
+  $('a[href="#shop"]').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+  });
 });
